@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.lenovo.weatherapp.MainActivity">
+
+    <Button
+        android:text="Updatera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/updateWeather"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:text="Stad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:id="@+id/stadText"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tempText"
+        android:textSize="24sp"
+        android:text="Temperatur"
+        android:layout_below="@+id/stadText"
+        android:layout_marginTop="33dp"
+        android:textColor="@android:color/holo_red_dark" />
+
+    <TextView
+        android:text="Molnighet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cloudText"
+        android:textSize="24sp"
+        android:layout_below="@+id/tempText"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="12dp"
+        android:layout_alignEnd="@+id/tempText"
+        android:textColor="@android:color/holo_green_light" />
+
+    <TextView
+        android:text="Vind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/windText"
+        android:textSize="24sp"
+        android:layout_below="@+id/cloudText"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="14dp"
+        android:layout_alignEnd="@+id/cloudText"
+        android:textColor="@android:color/holo_orange_dark" />
+
+    <TextView
+        android:text="Regn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rainText"
+        android:textSize="24sp"
+        android:layout_marginTop="14dp"
+        android:layout_below="@+id/windText"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/windText"
+        android:textColor="@android:color/holo_blue_bright" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/rainText"
+        android:layout_alignStart="@+id/stadText"
+        android:layout_marginTop="19dp" />
+
+</RelativeLayout>
